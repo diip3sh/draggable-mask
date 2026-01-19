@@ -269,13 +269,14 @@ export const DraggableMask = () => {
           className="maskContainer absolute top-[15vh] left-[8vw] h-[20vh] w-[35vw] cursor-grab border-none bg-transparent p-0"
           onKeyDown={(e) => {
             if (e.key === "Enter" || e.key === " ") {
-              // Handle keyboard activation if needed
               e.preventDefault();
             }
           }}
           onMouseDown={(e) => handleMouseDown(e, 0)}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
+          onMouseMove={(e) => handleMouseMove(e, 0)}
+          onMouseUp={handleMouseUp}
           ref={(el) => setMaskRef(el, 0)}
           tabIndex={0}
           type="button"
