@@ -248,14 +248,15 @@ export const DraggableMask = () => {
 
       <main className="relative z-40 h-screen w-screen bg-[url('https://www.transparenttextures.com/patterns/batthern.png')] bg-background">
         <video
-          autoPlay
+          autoPlay={true}
           className="fixed h-px w-px cursor-none opacity-0"
           id="clip-video"
           loop
           muted
           playsInline
+          preload="auto"
           ref={videoRef}
-          src="/video.mp4"
+          src="https://sample.vodobox.net/skate_phantom_flex_4k/skate_phantom_flex_4k.m3u8"
         />
 
         <button
