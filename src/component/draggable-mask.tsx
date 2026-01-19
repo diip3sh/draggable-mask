@@ -247,12 +247,6 @@ export const DraggableMask = () => {
       />
 
       <main className="relative z-40 h-screen w-screen bg-[url('https://www.transparenttextures.com/patterns/batthern.png')] bg-background">
-        <nav className="fixed inset-0 z-50 flex h-fit w-full items-center justify-center p-[1.1vw]">
-          <h1 className="text-[3.5vw] text-white tracking-tight">
-            Video Draggable Mask
-          </h1>
-        </nav>
-
         <video
           autoPlay
           className="fixed h-px w-px cursor-none opacity-0"
